@@ -135,11 +135,6 @@ static int adxl345_open(const hw_module_t* module, const char *id, hw_device_t**
 
     memset(dev, 0, sizeof(adxl345_device));
 
-    dev->common.tag = HARDWARE_DEVICE_TAG;
-    dev->common.version = ADXL345_API_VERSION_2_0;
-    dev->common.module = (struct hw_module_t*) module;
-    dev->common.close = adxl345_close;
-
     dev->getPosition = adxl345_getPosition;
     dev->getRate = adxl345_getRate;
     dev->setRate = adxl345_setRate;
