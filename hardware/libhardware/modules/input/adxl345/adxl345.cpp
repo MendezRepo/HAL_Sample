@@ -28,9 +28,6 @@ struct *adxl345_device;
 
 int adxl345_fd = -1;
 
-//https://www.ctrlinux.com/blog/?p=38
-//https://github.com/adanaila/ctrlinux/tree/master/i2c_uspace_app
-//https://wiki.analog.com/resources/tools-software/linux-drivers/input-misc/adxl345
 using namespace std;
 
 static string readSysfs(string path) {
